@@ -20,9 +20,9 @@
                 <td>
                   <a href="{{route('productos.edit', $producto->id)}}" class="btn btn-warning">Editar</a>
                   <form action="{{route('productos.delete', $producto->id)}}" method="POST">
-                  @csrf
-                  @method('delete')
-                  <button type="submit" class="btn btn-danger">Eliminar</button>
+                    @csrf
+                    @method('delete')
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
                   </form>
                 </td>
               </tr>

@@ -41,7 +41,7 @@ class ProductosController extends Controller
         $producto->precio = $request->precio;
         $producto->save();
 
-        return back()->with('message','El producto fue almacenado con exito');;
+        return back()->with('message','El producto fue almacenado con exito');
 
     }
 
